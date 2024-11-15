@@ -66,7 +66,7 @@ class ComfoAirCard extends LitElement {
   }
 
   getBypassTmpl(){
-    if(this.hass.states['binary_sensor.comfoair_bypass_valve_open'].state == 'on'){
+    if(this.hass.states['binary_sensor.comfoair_bypass_open'].state == 'on'){
       return html`<ha-icon icon="mdi:electric-switch"></ha-icon>`;
     }else{
       return html`<ha-icon class="inactive" icon="mdi:electric-switch"></ha-icon>`;
